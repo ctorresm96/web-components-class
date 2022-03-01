@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Web Components</title>
+  <style>
+    #info-box {
+      display: none;
+    }
+  </style>
+  <script src="./toggle.js"></script>
+</head>
+
+<body>
+  <uc-toggle text_open="Mostrar" text_closed="Ocultar">
+    <div slot="main">
+      Mostrar la información de aqui
+    </div>
+    <div slot="secondary">
+      Mostrar la información de aqui v2
+    </div>
+  </uc-toggle>
+</body>
+
+</html>
